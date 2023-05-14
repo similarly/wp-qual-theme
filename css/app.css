@@ -1127,9 +1127,6 @@ video {
 .text-5xl {
   font-size: 3.052rem;
 }
-.text-lg {
-  font-size: 1.2rem;
-}
 .text-sm {
   font-size: 0.8rem;
 }
@@ -1148,8 +1145,8 @@ video {
 .font-medium {
   font-weight: 500;
 }
-.uppercase {
-  text-transform: uppercase;
+.lowercase {
+  text-transform: lowercase;
 }
 .leading-tight {
   line-height: 1.25;
@@ -1423,6 +1420,9 @@ article > *:not(.entry-content),
       }
 * {
     font-family: 'Roboto', sans-serif;
+}
+.blog-name-header {
+    font-family: 'Play', sans-serif;
 }
 .bg-c-blue {
     background-color: #00a1f1;
