@@ -26,12 +26,13 @@
         opacity: 100%;
       }
     }
-    &:focus {
+    &:active {
       &:after {
-        transform: scaleX(1.2);
+        /*transform: scaleX(1.2);
         transition-timing-function: ease-out;
         transition-duration: 500ms;
-        transition: all;
+        transition: all;*/
+        @apply active:transform active:scale-150
       }
     }
 
