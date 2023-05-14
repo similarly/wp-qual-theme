@@ -1121,6 +1121,9 @@ video {
 .text-center {
   text-align: center;
 }
+.align-middle {
+  vertical-align: middle;
+}
 .text-2xl {
   font-size: 1.6rem;
 }
@@ -1331,12 +1334,7 @@ article > *:not(.entry-content),
 .menu li:hover:after {
         opacity: 100%;
       }
-.menu li:active:after {
-        /*transform: scaleX(1.2);
-        transition-timing-function: ease-out;
-        transition-duration: 500ms;
-        transition: all;*/}
-.menu li:active:after:active {
+.menu li:hover:after:active {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));

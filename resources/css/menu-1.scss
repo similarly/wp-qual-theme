@@ -26,12 +26,8 @@
         opacity: 100%;
       }
     }
-    &:active {
+    &:hover {
       &:after {
-        /*transform: scaleX(1.2);
-        transition-timing-function: ease-out;
-        transition-duration: 500ms;
-        transition: all;*/
         @apply active:transform active:scale-150
       }
     }

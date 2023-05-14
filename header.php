@@ -30,7 +30,7 @@
 		</div>
 		<div class="container mx-auto mt-16">
 			<div class="items-stretch py-2 border-b lg:flex lg:justify-between lg:items-center">
-				<div class="flex items-center justify-between">
+				<div class="flex items-center justify-between align-middle">
 						<?php if ( has_custom_logo() ) { ?>
 							<img class="h-16" src="<?php echo wp_get_attachment_url( get_theme_mod( 'custom_logo' ) );?>">
 						<?php } else { ?>

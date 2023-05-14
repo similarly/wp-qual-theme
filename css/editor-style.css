@@ -648,6 +648,9 @@
 .text-center {
     text-align: center;
 }
+.align-middle {
+    vertical-align: middle;
+}
 .text-2xl {
     font-size: 1.6rem;
 }
