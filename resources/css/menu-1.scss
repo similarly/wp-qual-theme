@@ -11,11 +11,11 @@
 
 .menu {
   li {
-    $menu-colors: '#00a1f1', '#ffa200', '#6dc238', '#922A8E', '#f15623';
     display: inline-block;
     margin: 0;
     position: relative;
     padding: 0 1.3rem;
+    font-family: 'Play', sans-serif;
 
     &:not(.menu-item-has-children) a {
       display: block;
@@ -24,6 +24,13 @@
     &:hover {
       &:after {
         opacity: 100%;
+      }
+    }
+    &:focus {
+      &:after {
+        transform: scale(1.2,);
+        transition-timing-function: ease-out;
+        transition: 0.2;
       }
     }
 
@@ -67,9 +74,9 @@
 
     ul.sub-menu {
       @apply  absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 
-              lg:right-5 lg:translate-y-6 lg:translate-x-0 items-stretch
+              lg:right-5 lg:translate-y-4 lg:translate-x-0 items-stretch
               flex bg-white py-3 shadow-lg min-w-[300px] border-b 
-              border-b-gray-200 border-t border-t-gray-50 z-10 transition-all duration-200 ease-in-out 
+              border-b-gray-200 border-t border-t-gray-50 z-10 transition-all duration-300 ease-out
               opacity-0 pointer-events-none flex-col;
       & > li:after {
         height: 100%;

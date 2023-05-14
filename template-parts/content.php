@@ -13,7 +13,7 @@
 
 	<?php else : ?>
 
-		<div class="entry-content ">
+		<div class="entry-content prose-a:text-blue-500 hover:prose-a:text-emerald-500">
 			<?php
 			/* translators: %s: Name of current post */
 			the_content(

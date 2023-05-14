@@ -1229,11 +1229,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.duration-200 {
-  transition-duration: 200ms;
+.duration-300 {
+  transition-duration: 300ms;
 }
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 .alignfull {
   margin: 2rem calc(50% - 50vw) !important;
@@ -1319,17 +1319,22 @@ article > *:not(.entry-content),
     opacity: 80%;
   }
 .menu li {
-    $menu-colors: '#00a1f1', '#ffa200', '#6dc238', '#922A8E', '#f15623';
     display: inline-block;
     margin: 0;
     position: relative;
     padding: 0 1.3rem;
+    font-family: 'Play', sans-serif;
   }
 .menu li:not(.menu-item-has-children) a {
       display: block;
     }
 .menu li:hover:after {
         opacity: 100%;
+      }
+.menu li:focus:after {
+        transform: scale(1.2,);
+        transition-timing-function: ease-out;
+        transition: 0.2;
       }
 .menu li:nth-child(5n - 4):after {
     background-color: #f15623;
@@ -1398,8 +1403,9 @@ article > *:not(.entry-content),
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
-  transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 .menu .menu-item-has-children ul.sub-menu > li:after {
         height: 100%;
@@ -1481,9 +1487,13 @@ article > *:not(.entry-content),
 .prose-h1\:text-2xl :is(:where(h1):not(:where([class~="not-prose"] *))) {
   font-size: 1.6rem;
 }
-.prose-a\:text-blue-600 :is(:where(a):not(:where([class~="not-prose"] *))) {
+.prose-a\:text-blue-500 :is(:where(a):not(:where([class~="not-prose"] *))) {
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+.hover\:prose-a\:text-emerald-500 :is(:where(a):not(:where([class~="not-prose"] *))):hover {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 @media (min-width: 480px) {
 
@@ -1558,7 +1568,7 @@ article > *:not(.entry-content),
 
   .menu .menu-item-has-children ul.sub-menu {
     right: 1.25rem;
-    --tw-translate-y: 1.5rem;
+    --tw-translate-y: 1rem;
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
@@ -1682,8 +1692,8 @@ article > *:not(.entry-content),
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:translate-y-6 {
-    --tw-translate-y: 1.5rem;
+  .lg\:translate-y-4 {
+    --tw-translate-y: 1rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
