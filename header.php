@@ -30,14 +30,14 @@
 		</div>
 		<div class="container mx-auto mt-16">
 			<div class="items-stretch py-2 border-b lg:flex lg:justify-between lg:items-center">
-				<div class="flex items-center justify-between align-middle">
+				<div class="flex items-center justify-between ">
 						<?php if ( has_custom_logo() ) { ?>
 							<img class="h-16" src="<?php echo wp_get_attachment_url( get_theme_mod( 'custom_logo' ) );?>">
 						<?php } else { ?>
 							<!-- <a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-3xl">
 								<?php echo get_bloginfo( 'name' ); ?>
 							</a> -->
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-2xl lg:text-4xl">«ооо» квалификация</a>
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="flex justify-center items-center blog-name-header lowercase text-2xl lg:text-4xl">«ооо» квалификация</a>
 							<p class="text-sm font-light text-gray-600">
 								<?php echo get_bloginfo( 'description' ); ?>
 							</p>
@@ -66,7 +66,7 @@
 						'container'		 => 'div',
 						'container_class'=> 'primary-menu menu lg:h-16 hidden lg:block',
 						'fallback_cb'    =>  true,
-						'menu_class'	 => 'flex items-center  xl:text-base mt-3 lg:mt-0 lg:flex-row gap-5 text-md flex-col font-bold h-full',
+						'menu_class'	 => 'flex items-center  lg:text-md  mt-3 lg:mt-0 lg:flex-row gap-5 flex-col font-bold h-full',
 						'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
 					)
 				);
