@@ -8,6 +8,7 @@
 
 	<?php wp_head(); ?>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,300italic,400italic,500,600,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal:400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
 <body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
@@ -33,7 +34,7 @@
 						<?php if ( has_custom_logo() ) { ?>
 							<img class="h-16" src="<?php echo wp_get_attachment_url( get_theme_mod( 'custom_logo' ) );?>">
 						<?php } else { ?>
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="text-lg font-extrabold uppercase">
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header text-xl">
 								<?php echo get_bloginfo( 'name' ); ?>
 							</a>
 
