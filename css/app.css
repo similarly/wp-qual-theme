@@ -1332,9 +1332,10 @@ article > *:not(.entry-content),
         opacity: 100%;
       }
 .menu li:focus:after {
-        transform: scale(1.2,);
+        transform: scaleX(1.2);
         transition-timing-function: ease-out;
-        transition: 0.2;
+        transition-duration: 0.2;
+        transition: all;
       }
 .menu li:nth-child(5n - 4):after {
     background-color: #f15623;

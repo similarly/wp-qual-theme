@@ -28,9 +28,10 @@
     }
     &:focus {
       &:after {
-        transform: scale(1.2,);
+        transform: scaleX(1.2);
         transition-timing-function: ease-out;
-        transition: 0.2;
+        transition-duration: 0.2;
+        transition: all;
       }
     }
 
