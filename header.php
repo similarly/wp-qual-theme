@@ -37,7 +37,7 @@
 							<!-- <a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-3xl">
 								<?php echo get_bloginfo( 'name' ); ?>
 							</a> -->
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-4xl">«ооо» квалификация</a>
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-2xl lg:text-4xl">«ооо» квалификация</a>
 							<p class="text-sm font-light text-gray-600">
 								<?php echo get_bloginfo( 'description' ); ?>
 							</p>
