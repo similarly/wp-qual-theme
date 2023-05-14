@@ -1,0 +1,10 @@
+
+alignwide
+alignnone
+aligncenter
+alignright
+wp-block-button
+wp-caption
+wp-caption-text
+border-indigo-600
+border

@@ -1,0 +1,16 @@
+@import "tailwindcss/base";
+/* @import "../../css/custom-app.css"; */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "custom.css";
+@import "menu-1.scss";
+@import "custom_fonts.css";
+@import "colors.css";
+@import "prose.css";
+
+.alignfull {
+    margin: auto !important;
+    max-width: 100vw !important;
+    width: auto !important;
+}

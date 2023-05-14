@@ -1,0 +1,1 @@
+<button class="px-5 py-1 my-auto mr-auto font-medium rounded-md shadow-md hover:shadow-md bg-c-green button-effect hover:bg-lime-500">Для слабовидящих</button>
