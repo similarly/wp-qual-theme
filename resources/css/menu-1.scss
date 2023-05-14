@@ -30,7 +30,7 @@
       &:after {
         transform: scaleX(1.2);
         transition-timing-function: ease-out;
-        transition-duration: 0.2;
+        transition-duration: 500ms;
         transition: all;
       }
     }
