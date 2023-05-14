@@ -34,10 +34,10 @@
 						<?php if ( has_custom_logo() ) { ?>
 							<img class="h-16" src="<?php echo wp_get_attachment_url( get_theme_mod( 'custom_logo' ) );?>">
 						<?php } else { ?>
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-2xl">
+							<!-- <a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-3xl">
 								<?php echo get_bloginfo( 'name' ); ?>
-							</a>
-
+							</a> -->
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-4xl">«ооо» квалификация</a>
 							<p class="text-sm font-light text-gray-600">
 								<?php echo get_bloginfo( 'description' ); ?>
 							</p>
