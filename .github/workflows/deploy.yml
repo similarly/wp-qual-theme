@@ -14,8 +14,11 @@ jobs:
     - name: 📂 Sync Files
       uses: SamKirkland/web-deploy@v1
       with:
-        target-server: worldenerg.beget.tech
-        remote-user: worldenerg_danil
-        private-ssh-key: ${{ secrets.SSH_KEY }}
-        destination-path: /home/w/worldenerg/kval.worldenergy24.ru/public_html/wp-app/wp-content/themes/qual-theme
+       private-ssh-key: ${{ secrets.SSH_KEY }}
+        #target-server: worldenerg.beget.tech
+        #remote-user: worldenerg_danil
+        #destination-path: /home/w/worldenerg/kval.worldenergy24.ru/public_html/wp-app/
         rsync-options: --archive --verbose --compress --human-readable --progress --delete-after --exclude=node_modules/ --exclude=.git* --exclude=.git/ --exclude=README.md --exclude=readme.md --exclude=.gitignore
+        target-server: kvalifik.beget.tech
+        remote-user: kvalifik_danil
+        destination-path: /home/w/kvalifik/kvalifik.worldenergy24.ru/public_html/wp-app/wp-content/themes/qual-theme
