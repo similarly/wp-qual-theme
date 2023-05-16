@@ -22,9 +22,9 @@
 	<header>
 		<div class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 bg-c-blue">
 			<div class="flex justify-between gap-5 mx-auto font-bold text-white sm:container">
-				<a class="w-8 h-8 social-icon social-icon-vk" href="https://vk.com/worldenergy24"></a>
+				<a class="w-8 h-8 svg-icon-vk svg-icon " href="https://vk.com/worldenergy24"></a>
 				<?php get_template_part( 'template-parts/button')?>
-				<div class="my-auto">Text1</div>
+				<div class="my-auto"><div class="w-8 h-8 svg-icon svg-icon-vk"></div></div>
 				<div class="my-auto">Text1</div>
 			</div>
 		</div>

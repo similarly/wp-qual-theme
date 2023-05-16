@@ -20,5 +20,5 @@ jobs:
         #destination-path: /home/w/worldenerg/kval.worldenergy24.ru/public_html/wp-app/
         rsync-options: --archive --verbose --compress --human-readable --progress --delete-after --exclude=node_modules/ --exclude=.git* --exclude=.git/ --exclude=README.md --exclude=readme.md --exclude=.gitignore
         target-server: kvalifik.beget.tech
-        remote-user: kvalifik_danil
-        destination-path: /home/k/kvalifik/kvalifik.beget.tech/public_html/wp-app/wp-content/themes/qual-theme
+        remote-user: kvalifik_danilrf
+        destination-path: /home/k/kvalifik/kvalifikaciya24.rf/public_html/wp-app/wp-content/themes/qual-theme
