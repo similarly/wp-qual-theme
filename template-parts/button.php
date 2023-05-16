@@ -1,1 +1,1 @@
-<button class="px-5 py-1 my-auto mr-auto font-medium rounded-md shadow-md hover:shadow-md bg-c-green button-effect hover:bg-lime-500">Для слабовидящих</button>
+<button class="lg:px-5 px-2 py-1 my-auto mr-auto font-medium lg:text-md text-smd rounded-md shadow-md hover:shadow-md bg-c-green button-effect hover:bg-lime-500">Для слабовидящих</button>
