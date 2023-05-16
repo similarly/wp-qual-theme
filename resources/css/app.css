@@ -3,7 +3,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "custom.css";
+@import "custom.scss";
 @import "menu-1.scss";
 @import "custom_fonts.css";
 @import "colors.css";
