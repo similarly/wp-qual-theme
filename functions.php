@@ -38,13 +38,13 @@ add_action( 'after_setup_theme', 'tailpress_setup' );
 /**
  * Enqueue theme assets.
  */
+
 function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
-	wp_enqueue_script('jquery');
 	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
 	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_style('bvi', tailpress_asset( 'css/bvi.min.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script('bvi', tailpress_asset("js/bvi.min.js"), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style('bvi', get_theme_file_uri('/css/bvi.min.css'), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script('bvi', get_theme_file_uri('/js/bvi.min.js'), array(), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
