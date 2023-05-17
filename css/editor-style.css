@@ -916,9 +916,25 @@ body {
 .prose-h1\:text-2xl :is(:where(h1):not(:where([class~="not-prose"] *))) {
     font-size: 1.6rem;
 }
-.prose-a\:text-blue-500 :is(:where(a):not(:where([class~="not-prose"] *))) {
+.prose-h3\:text-xl :is(:where(h3):not(:where([class~="not-prose"] *))) {
+    font-size: 1.25rem;
+}
+.prose-h3\:font-bold :is(:where(h3):not(:where([class~="not-prose"] *))) {
+    font-weight: 700;
+}
+.prose-a\:text-sky-500 :is(:where(a):not(:where([class~="not-prose"] *))) {
     --tw-text-opacity: 1;
-    color: rgb(59 130 246 / var(--tw-text-opacity));
+    color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+.prose-a\:text-sky-600 :is(:where(a):not(:where([class~="not-prose"] *))) {
+    --tw-text-opacity: 1;
+    color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+.prose-a\:decoration-dotted :is(:where(a):not(:where([class~="not-prose"] *))) {
+    text-decoration-style: dotted;
+}
+.prose-a\:underline-offset-2 :is(:where(a):not(:where([class~="not-prose"] *))) {
+    text-underline-offset: 2px;
 }
 .hover\:prose-a\:text-emerald-500 :is(:where(a):not(:where([class~="not-prose"] *))):hover {
     --tw-text-opacity: 1;
