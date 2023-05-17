@@ -538,6 +538,9 @@
 .min-w-\[300px\] {
     min-width: 300px;
 }
+.max-w-2xl {
+    max-width: 42rem;
+}
 .max-w-full {
     max-width: 100%;
 }
@@ -925,10 +928,6 @@ body {
 .prose-a\:text-sky-500 :is(:where(a):not(:where([class~="not-prose"] *))) {
     --tw-text-opacity: 1;
     color: rgb(14 165 233 / var(--tw-text-opacity));
-}
-.prose-a\:text-sky-600 :is(:where(a):not(:where([class~="not-prose"] *))) {
-    --tw-text-opacity: 1;
-    color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 .prose-a\:decoration-dotted :is(:where(a):not(:where([class~="not-prose"] *))) {
     text-decoration-style: dotted;
