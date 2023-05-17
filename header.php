@@ -26,7 +26,7 @@
 				<!-- <a class="w-8 h-8 svg-icon-vk svg-icon " href="https://vk.com/worldenergy24"></a> -->
 				<?php get_template_part( 'template-parts/button')?>
 				<div class="my-auto"><div class="w-4 h-4 sm:w-6 sm:h-6 svg-icon svg-icon-phone svg-icon-white"></div></div>
-				<div class="my-auto text-smd sm:text-md">8 (923) 573-27-55</div>
+				<div class="my-auto text-smd sm:text-md">+7 (923) 573-27-55</div>
 			</div>
 		</div>
 		<div class="container mx-auto mt-16">
