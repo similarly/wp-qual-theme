@@ -70,4 +70,6 @@
   });
 </script>
 
-<img class="max-w-2xl max-w-3xl max-w-4xl mx-auto" src="/wp-app/wp-content/uploads/2023/05/111_Плашки_этапы_работ_3.jpg" />
+<img class="max-w-2xl mx-auto" src="/wp-app/wp-content/uploads/2023/05/111_Плашки_этапы_работ_3.jpg" />
+<img class="max-w-3xl mx-auto" src="/wp-app/wp-content/uploads/2023/05/111_Плашки_этапы_работ_3.jpg" />
+<img class="max-w-4xl mx-auto" src="/wp-app/wp-content/uploads/2023/05/111_Плашки_этапы_работ_3.jpg" />
