@@ -42,7 +42,7 @@
     <img src="https://www.a-pdf.com/watermark/examples/pdf-Secret.gif" alt="Документ" class="object-cover w-40 h-40 rounded-md cursor-pointer">
 
     <!-- Модальное окно для отображения изображения -->
-    <div class="fixed inset-0 flex items-center justify-center hidden bg-black bg-opacity-50">
+    <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div class="relative">
         <img src="пhttps://www.a-pdf.com/watermark/examples/pdf-Secret.gif" alt="Документ" class="max-w-full max-h-full">
         <button class="absolute top-0 right-0 p-2 mt-2 mr-2 text-gray-500 transition duration-300 bg-white rounded-full hover:text-gray-800">

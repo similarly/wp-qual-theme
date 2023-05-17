@@ -5,9 +5,9 @@
 
 @import "custom.scss";
 @import "menu-1.scss";
-@import "custom_fonts.css";
-@import "colors.css";
-@import "prose.css";
+@import "custom_fonts.scss";
+@import "colors.scss";
+@import "prose.scss";
 
 .alignfull {
     margin: auto !important;
