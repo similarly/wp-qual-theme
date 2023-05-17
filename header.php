@@ -5,11 +5,10 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 	<?php wp_head(); ?>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,300italic,400italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-
 	<link href="https://fonts.googleapis.com/css?family=Play:400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<script src="/letsee/letsee.js"></script>
 </head>
 
 <body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
