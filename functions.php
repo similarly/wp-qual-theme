@@ -40,9 +40,11 @@ add_action( 'after_setup_theme', 'tailpress_setup' );
  */
 function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
+	wp_enqueue_script('jquery');
 	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
 	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script('letsee', tailpress_asset("js/letsee.js"), array(), $theme->get( 'Version' ) );
+	// wp_enqueue_style('letsee', tailpress_asset( 'css/bvi.min.css' ), array(), $theme->get( 'Version' ) );
+	// wp_enqueue_script('letsee', tailpress_asset("js/bvi.min.js"), array(), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );

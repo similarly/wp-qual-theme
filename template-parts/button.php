@@ -1,1 +1,1 @@
-<button href="javascript://" onclick="letsee_toggle_panel()" class="px-2 py-1 my-auto mr-auto font-medium rounded-md shadow-md lg:px-5 lg:text-md text-smd hover:shadow-md bg-c-green button-effect hover:bg-lime-500">Для слабовидящих</button>
+<button data-bvi="panel-show" class="px-2 py-1 my-auto mr-auto font-medium rounded-md shadow-md bvi-open lg:px-5 lg:text-md text-smd hover:shadow-md bg-c-green button-effect hover:bg-lime-500">Для слабовидящих</button>

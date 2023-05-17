@@ -18,5 +18,8 @@
 </div>
 
 <?php wp_footer(); ?>
+<script>
+  new isvek.Bvi();
+</script>
 </body>
 </html>

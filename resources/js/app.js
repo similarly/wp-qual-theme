@@ -1,3 +1,6 @@
+import bvi from "bvi"
+
+
 // Navigation toggle
 window.addEventListener('load', function () {
       let main_navigation = document.querySelector('.primary-menu');
