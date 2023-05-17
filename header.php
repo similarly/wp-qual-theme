@@ -8,7 +8,8 @@
 	<?php wp_head(); ?>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,300italic,400italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Play:400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<script src="https://квалификация24.рф/wp-app/wp-content/themes/qual-theme/js/letsee.js"></script>
+	<!-- <script src="https://квалификация24.рф/wp-app/wp-content/themes/qual-theme/js/letsee.js"></script> -->
+	<?php wp_enqueue_script("https://квалификация24.рф/wp-app/wp-content/themes/qual-theme/js/letsee.js"); ?>
 </head>
 
 <body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
