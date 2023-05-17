@@ -28,6 +28,13 @@ module.exports = {
             '5xl': '3.052rem',
           },
         extend: {
+            typography: {
+                DEFAULT: {
+                  css: {
+                    maxWidth: '100ch', // add required value here
+                  }
+                }
+              },
             colors: {
                 'custom' : '#48A809'
             },
