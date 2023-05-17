@@ -1,21 +1,23 @@
 .menu {
   & > * > li {
-    height: 2em;
+    min-height: 2em;
     & > a {
       line-height: 2em;
     }
   }
   li {
+    @apply px-1 lg:px-3 py-0;
     display: inline-block;
     margin: 0;
     position: relative;
-    padding: 0 1.3rem;
-    font-family: 'Play', sans-serif;
-
     vertical-align: middle;
-
+    text-align: center;
+    a {
+      text-align: center;
+    }
     &:not(.menu-item-has-children) a {
       display: block;
+      
     }
     &:after {
       pointer-events: none;

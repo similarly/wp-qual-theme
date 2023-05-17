@@ -7,7 +7,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,300italic,400italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Play:400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
 <body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
@@ -32,7 +32,7 @@
 						<?php if ( has_custom_logo() ) { ?>
 							<img class="h-16" src="<?php echo wp_get_attachment_url( get_theme_mod( 'custom_logo' ) );?>">
 						<?php } else { ?>
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="flex items-center justify-center text-2xl lowercase blog-name-header lg:text-4xl">«ооо» квалификация</a>
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="flex font-bold items-center justify-center text-2xl lowercase blog-name-header xl:text-4xl">«ооо» квалификация</a>
 							<p class="text-sm font-light text-gray-600">
 								<?php echo get_bloginfo( 'description' ); ?>
 							</p>
@@ -61,7 +61,7 @@
 						'container'		 => 'div',
 						'container_class'=> 'primary-menu menu lg:h-16 hidden lg:block',
 						'fallback_cb'    =>  true,
-						'menu_class'	 => 'flex items-center  lg:text-md  mt-3 lg:mt-0 lg:flex-row gap-5 flex-col font-bold h-full',
+						'menu_class'	 => 'flex items-center lg:text-md  mt-3 lg:mt-0 lg:flex-row gap-3 lg:gap-5 flex-col font-bold h-full',
 						'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
 					)
 				);
