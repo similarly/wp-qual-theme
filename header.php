@@ -7,7 +7,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,300italic,400italic,500,600,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,300italic,400italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 
 	<link href="https://fonts.googleapis.com/css?family=Play:400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
@@ -22,7 +22,7 @@
 
 	<header>
 		<div class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 bg-c-blue">
-			<div class="flex justify-between gap-4 mx-auto font-bold text-white container">
+			<div class="container flex justify-between gap-4 mx-auto font-bold text-white">
 				<a class="w-8 h-8 svg-icon-vk svg-icon " href="https://vk.com/worldenergy24"></a>
 				<?php get_template_part( 'template-parts/button')?>
 				<div class="my-auto"><div class="w-4 h-4 sm:w-6 sm:h-6 svg-icon svg-icon-phone svg-icon-white"></div></div>
@@ -35,10 +35,10 @@
 						<?php if ( has_custom_logo() ) { ?>
 							<img class="h-16" src="<?php echo wp_get_attachment_url( get_theme_mod( 'custom_logo' ) );?>">
 						<?php } else { ?>
-							<!-- <a href="<?php echo get_bloginfo( 'url' ); ?>" class="blog-name-header lowercase text-3xl">
+							<!-- <a href="<?php echo get_bloginfo( 'url' ); ?>" class="text-3xl lowercase blog-name-header">
 								<?php echo get_bloginfo( 'name' ); ?>
 							</a> -->
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="flex justify-center items-center blog-name-header lowercase text-2xl lg:text-4xl">«ооо» квалификация</a>
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="flex items-center justify-center text-2xl lowercase blog-name-header lg:text-4xl">«ооо» квалификация</a>
 							<p class="text-sm font-light text-gray-600">
 								<?php echo get_bloginfo( 'description' ); ?>
 							</p>
