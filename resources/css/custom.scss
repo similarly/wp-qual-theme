@@ -14,12 +14,17 @@
       filter: brightness(0) invert(1);
     }
 }
+
 .btn-inner-shadow {
     box-shadow: inset 0 -3.5px #92d7ff;
 }
+
 .fixed-top-bar {
     background: rgb(79,155,240);
-    background: linear-gradient(114deg, rgba(79,155,240,0.7259278711484594) 0%, rgba(0,161,241,0.7679446778711485) 17%, rgba(0,212,255,0.3906337535014006) 56%, rgba(0,161,241,0.2637429971988795) 96%);}
+    background: linear-gradient(114deg, rgba(79,155,240,0.7259278711484594) 0%, rgba(0,161,241,0.7679446778711485) 17%, rgba(0,212,255,0.3906337535014006) 56%, rgba(0,161,241,0.2637429971988795) 96%);
+    background-attachment: fixed;
+}
+
 .blog-name-header {
     @apply lg:-translate-y-0.5 xl:-translate-y-1;
     text-shadow: 0px 3px rgba(63,107,169, 0.3) ;

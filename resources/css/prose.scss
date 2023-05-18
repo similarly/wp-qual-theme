@@ -1,0 +1,6 @@
+.prose 
+{
+    .wp-block-file__button {
+        @apply no-underline rounded-lg text-slate-300 hover:text-slate-100;
+    }
+}

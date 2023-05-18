@@ -19,14 +19,23 @@
 	<?php do_action( 'tailpress_header' ); ?>
 
 	<header>
-		<div class="fixed-top-bar fixed top-0 left-0 z-50 flex items-center w-screen h-16 bg-c-blue">
-			<div class="container flex justify-between gap-4 mx-auto font-bold text-white">
-				<?php get_template_part( 'template-parts/button')?>
-				<div class="my-auto"><div class="w-4 h-4 sm:w-6 sm:h-6 svg-icon svg-icon-phone svg-icon-white"></div></div>
-				<div class="my-auto text-smd sm:text-md">+7 (923) 573-27-55</div>
+		<div class="fixed-top-bar top-0 left-0 z-50 flex items-center w-screen h-20 bg-c-blue">
+			<div class="container flex justify-between gap-4 mx-auto font-bold text-white ">
+				<div id="topbar-section-left" class="flex flex-row items-center -translate-y-[0.81rem] sm:transform-none">
+					<?php get_template_part('template-parts/button')?>
+				</div>
+				<div id="topbar-section-right" class="flex flex-col-reverse justify-center gap-2 sm:flex-row sm:gap-3 md:gap-7">
+					<div id="topbar-section-row" class="flex flex-row items-center justify-center gap-1 xl:gap-2 md:translate-y-0.5 ">
+						<div class="w-4 h-4 md:w-5 md:h-5 svg-icon svg-icon-phone svg-icon-white"></div>
+						<div class="text-sm md:text-smd">+7 (923) 573-27-55</div>
+					</div>
+					<div id="topbar-section-row" class="">
+						<?php get_template_part('template-parts/sdo-button')?>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="container mx-auto mt-16">
+		<div class="container mx-auto ">
 			<div class="items-stretch py-2 border-b lg:flex lg:justify-between lg:items-center">
 				<div class="flex items-center justify-between ">
 						<?php if ( has_custom_logo() ) { ?>
