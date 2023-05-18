@@ -1,8 +1,8 @@
 .menu {
   & > * > li {
-    min-height: 2em;
+    min-height: 3em;
     & > a {
-      line-height: 2em;
+      line-height: 3em;
     }
   }
   li {
@@ -63,22 +63,22 @@
     position: relative;
 
     &:hover > ul.sub-menu {
-      @apply flex translate-y-0 opacity-100 pointer-events-auto
+      @apply flex opacity-100 pointer-events-auto translate-y-3
     }
 
     ul.sub-menu {
-      @apply  absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 
-              lg:right-5 lg:translate-y-4 lg:translate-x-0 items-stretch
-              flex bg-white py-3 shadow-lg min-w-[300px] border-b 
-              border-b-gray-200 border-t border-t-gray-50 z-10 transition-all duration-300 ease-out
-              opacity-0 flex-col z-50;
+      @apply  absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-4 lg:translate-y-4 lg:-translate-x-full
+              items-stretch flex flex-col 
+              bg-white py-3 shadow-lg min-w-[300px] border-b border-b-gray-200 border-t border-t-gray-50 
+              transition-all duration-300 ease-out
+              opacity-0  z-10 pointer-events-none align-middle;
       & > li:after {
+        transform: inherit;
         height: 100%;
         width: 6px;
-        transform: translate(0, 0);
     }
       & li {
-        @apply w-full my-4 px-8;
+        @apply w-full px-2 my-3 lg:my-2 lg:px-8 ;
       }
 
       ul.sub-menu {
@@ -87,21 +87,8 @@
         right: calc(100% + 0.1rem);
         top: -0.7rem;
         box-shadow: unset;
-        
+        @apply lg:pt-0;
       }
     }
   } 
-}
-
-@media (max-width: 1024px) {
-  & .menu-item-has-children ul.sub-menu {
-    text-align: center;
-    li {
-      @apply my-3 px-2
-    }
-    ul.sub-menu {
-      padding-top: 0;
-      text-align: center;
-    }
-  }
 }

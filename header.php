@@ -25,7 +25,7 @@
 					<?php get_template_part('template-parts/button')?>
 				</div>
 				<div id="topbar-section-right" class="flex flex-col-reverse justify-center gap-2 sm:flex-row sm:gap-3 md:gap-7">
-					<div id="topbar-section-row" class="flex flex-row items-center justify-center gap-1 xl:gap-2 md:translate-y-0.5 ">
+					<div id="topbar-section-row" class="flex flex-row items-center justify-center gap-1 xl:gap-2 md:translate-y- ">
 						<div class="w-4 h-4 md:w-5 md:h-5 svg-icon svg-icon-phone svg-icon-white"></div>
 						<div class="text-sm md:text-smd">+7 (923) 573-27-55</div>
 					</div>
@@ -70,7 +70,7 @@
 						'container'		 => 'div',
 						'container_class'=> 'primary-menu menu lg:h-16 hidden lg:block',
 						'fallback_cb'    =>  true,
-						'menu_class'	 => 'flex items-center lg:text-md  mt-3 lg:mt-0 lg:flex-row gap-3 lg:gap-5 flex-col font-bold h-full',
+						'menu_class'	 => 'flex items-center lg:text-md  mt-3 lg:mt-0 lg:flex-row lg:gap-5 flex-col font-bold h-full',
 						'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
 					)
 				);

@@ -19,7 +19,9 @@
 
 <?php wp_footer(); ?>
 <script>
-  new isvek.Bvi();
+  new isvek.Bvi({
+	panelFixed: false,
+  });
 </script>
 </body>
 </html>
