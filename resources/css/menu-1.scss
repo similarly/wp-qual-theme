@@ -71,7 +71,7 @@
               lg:right-5 lg:translate-y-4 lg:translate-x-0 items-stretch
               flex bg-white py-3 shadow-lg min-w-[300px] border-b 
               border-b-gray-200 border-t border-t-gray-50 z-10 transition-all duration-300 ease-out
-              opacity-0 flex-col;
+              opacity-0 flex-col z-50;
       & > li:after {
         height: 100%;
         width: 6px;
