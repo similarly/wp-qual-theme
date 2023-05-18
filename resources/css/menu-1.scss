@@ -1,27 +1,12 @@
 .menu {
-  & > * > li {
-    min-height: 3em;
-    & > a {
-      line-height: 3em;
-    }
-  }
   li {
-    @apply px-1 lg:px-3 py-0;
-    display: inline-block;
-    margin: 0;
-    position: relative;
-    vertical-align: middle;
-    text-align: center;
+    @apply  px-1 py-0 m-0 lg:px-3 h-full  
+            flex items-center justify-center relative;
+    
     a {
       text-align: center;
     }
-    &:not(.menu-item-has-children) a {
-      display: block;
-      
-    }
-    &:after {
-      pointer-events: none;
-    }
+
     &:hover {
       &:after {
         opacity: 100%;
@@ -44,18 +29,10 @@
       @apply bg-c-blue
     }
 
-    
     &:after {
-      @apply translate-y-3 lg:translate-y-7;
-      transition: all 0.2s;
       content: '';
-      display: block;
-      height: 6px;
-      width: 100%;
-      position: absolute;
-      opacity: 0%;
-      left: 0;
-      bottom: 0;
+      @apply  translate-y-[11px] transition pointer-events-none 
+              absolute bottom-0 opacity-0 w-full  h-1.5;
     }
   }
 
@@ -72,13 +49,15 @@
               bg-white py-3 shadow-lg min-w-[300px] border-b border-b-gray-200 border-t border-t-gray-50 
               transition-all duration-300 ease-out
               opacity-0  z-10 pointer-events-none align-middle;
-      & > li:after {
-        transform: inherit;
-        height: 100%;
-        width: 6px;
-    }
       & li {
-        @apply w-full px-2 my-3 lg:my-2 lg:px-8 ;
+        @apply  w-full px-2 my-3 lg:my-2 lg:px-8;
+        &:after {
+          transform: inherit;
+          left: 0;
+          bottom: auto;
+          height: 100%;
+          width: 6px;
+        }
       }
 
       ul.sub-menu {
