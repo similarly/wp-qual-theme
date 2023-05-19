@@ -109,3 +109,13 @@ function tailpress_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 }
 
 add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3 );
+
+function my_excerpt_length($length) { 
+	return 60; 
+} 
+function my_excerpt_more($ellip) {
+	return ' &hellip;';
+}
+
+add_filter('excerpt_length', 'my_excerpt_length');
+add_filter('excerpt_more', 'my_excerpt_more');

@@ -19,7 +19,7 @@
 	<?php do_action( 'tailpress_header' ); ?>
 
 	<header>
-		<div class="fixed-top-bar top-0 left-0 z-50 flex items-center w-screen h-20 bg-c-blue">
+		<div class="top-0 left-0 z-50 flex items-center w-screen h-20 fixed-top-bar bg-c-blue">
 			<div class="container flex justify-between gap-4 mx-auto font-bold text-white ">
 				<div id="topbar-section-left" class="flex flex-row items-center -translate-y-[0.81rem] sm:transform-none">
 					<?php get_template_part('template-parts/button')?>
@@ -41,7 +41,7 @@
 						<?php if ( has_custom_logo() ) { ?>
 							<img class="h-16" src="<?php echo wp_get_attachment_url( get_theme_mod( 'custom_logo' ) );?>">
 						<?php } else { ?>
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="flex font-bold items-center justify-center text-2xl lowercase blog-name-header md:text-4xl">«ооо» квалификация</a>
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="flex items-center justify-center text-2xl font-bold lowercase blog-name-header md:text-4xl">«ооо» квалификация</a>
 							<p class="text-sm font-light text-gray-600">
 								<?php echo get_bloginfo( 'description' ); ?>
 							</p>
